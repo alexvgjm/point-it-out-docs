@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+		<link href="./_app/immutable/assets/0.DfuXOrQL.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Code.CgOlJt5H.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BiGFHQg_.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.CM25QOoZ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-client.DElzHtsw.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BAIZGOOj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.Bp1Y62Lx.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/if.Cc8Pxh-J.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/this.BDMotzAb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/props.C3SyeIBd.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.DxLVbT6p.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/general.svelte.vTPFSwDH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/lifecycle.DSA5eMcb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.DEAlNpfb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.C0SJ77QC.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/public.CdIXumkF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/main.cYz7HraO.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.CzXBY7QC.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Code.dmhNf5x3.js">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <!--[--><!--[--><!----><div class="docs-wrapper svelte-1sz14ci"><nav class="main-nav svelte-1lsp5fj "><button class="open-nav svelte-1lsp5fj"><span class="svelte-1lsp5fj"></span> <span class="svelte-1lsp5fj"></span> <span class="svelte-1lsp5fj"></span></button> <div class="main-nav__wrapper svelte-1lsp5fj"><header class="svelte-1lsp5fj"><h1>Point it out docs</h1> <div class="version">v.0.1.4</div></header> <!--[--><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/#getting-started">General</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/#getting-started">Getting started</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/create#creating-pointers">create(...)</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/create#creating-pointers">Creating pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/create#rect">Rect</a><a class="main-nav__link svelte-1lsp5fj " href="/create#pointer-references">Pointer references</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/update#update-all">update()</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/update#update-all">Update all pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/update#update-specific-pointer">Update a pointer</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/clear#clear-all-pointers">clear()</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/clear#clear-all-pointers">Clear all pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/clear#destroy-specific-pointer">Destroy a pointer</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/config">config(options)</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/config">Configuring global options</a><!--]--></nav><!--]--></div></nav><!----> <main class="svelte-1sz14ci"><!----><!----><section class="doc-section"><h1 id="update-all">Update all pointers</h1> <p>If the layout of your web or app changes, elements positioned absolutely as pointers might keep
+    the original first calculated position and not follow target elements to their new position.
+    Make sure to call this function afterward to recalculate pointers positions over targets.</p> <div class="code-wrapper svelte-1b5vxof " style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-1b5vxof"><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><button class="code-wrapper__button svelte-1b5vxof">Select all</button><!--]--></div> <pre class="svelte-1b5vxof"><code class="language-typescript svelte-1b5vxof"><!----><!---->import { update } from 'pointitout' 
+
+update() // Update all created pointers, recalculating its position.<!----></code></pre></div><!----> <section class="doc-section"><h2>Why is there no automatic update?</h2> <p>Since the factors that could cause target position changes cannot be known, the simplest
+      automatic update could involve continuous queries or repeated invocations of excessive and
+      ineffective updates.</p> <p>It is better that this library does not assume such responsibility hiding such cost.</p> <h3>Automatic update on window resize</h3> <p>Window resizing is a well-known frequent scenario. When this happens, the update function is
+      called.</p> <p>But if you need more control or are updating the pointers another way, or for some other
+      reason you need to disable this behavior, set the updateOnResize option to false.</p></section></section> <section class="doc-section"><h1 id="update-specific-pointer">Update a specific pointer</h1> <p>WORK IN PROGRESS. This doesn't work yet, will be added in 1.5.</p> <div class="code-wrapper svelte-1b5vxof " style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-1b5vxof"><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><button class="code-wrapper__button svelte-1b5vxof">Select all</button><!--]--></div> <pre class="svelte-1b5vxof"><code class="language-typescript svelte-1b5vxof"><!----><!---->import { create } from 'pointitout' 
+
+const pointer = create('rect', { target: '#target-element-id' })
+
+// ...
+// Later, after some change in the target's position
+pointer.update() // Update the pointer<!----></code></pre></div><!----></section><!----><!----></main></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_d8udzt = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{},"uses":{}},null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BiGFHQg_.js"),
+						import("./_app/immutable/entry/app.BAIZGOOj.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+  </body>
+</html>

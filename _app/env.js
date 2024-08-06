@@ -1,0 +1,1 @@
+export const env={"PUBLIC_VERSION":"0.1.4","PUBLIC_DOCS_ROOT":""}
