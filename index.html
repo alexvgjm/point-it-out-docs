@@ -1,60 +1,90 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Point it out docs</title>
+    <meta 
+      name="description" 
+      content="A tiny, zero-dependencies JavaScript library to mark/point out DOM elements">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Point It Out Docs">
+    <meta name="twitter:description"
+        content="A tiny, zero-dependencies JavaScript library to mark/point out DOM elements.">
+    <meta name="twitter:image" content="https://alexvgjm.github.io/point-it-out-docs/pointitout-og-logo.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alexvgjm.github.io/point-it-out-docs/">
+    <meta property="og:title" content="Point it out docs">
+    <meta property="og:description"
+        content="A tiny, zero-dependencies JavaScript library to mark/point out DOM elements.">
+    <meta property="og:image" content="https://alexvgjm.github.io/point-it-out-docs/pointitout-og-logo.png">
+    <meta property="og:image:alt" content="Point it out logo">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
     
-		<link href="./_app/immutable/assets/0.DfuXOrQL.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/Code.CgOlJt5H.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CqlbQ0zm.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Cpfibknc.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-client.DElzHtsw.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.E6FX8gWJ.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.Bp1Y62Lx.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/if.Cc8Pxh-J.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/this.BDMotzAb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/props.C3SyeIBd.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.xP3VHsVu.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/general.svelte.vTPFSwDH.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/lifecycle.DSA5eMcb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/each.DEAlNpfb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.Dau7zBBa.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/public.DKTOmWtN.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/main.cYz7HraO.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.Dbxsx_Xq.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Code.dmhNf5x3.js">
+		<link href="./_app/immutable/assets/0.DA1_vzdB.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Code.RaBWRvM7.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/ColumnsContainer.BdrvW1Zj.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.Bsc7_E0T.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BClsvno7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bvowx2OZ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C-VLNsqj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/VXsCTCol.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.ULhS0SmU.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dj_qTCJT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/0KLMQfbz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C_-xgk12.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.C3uTVJad.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CgXZ9ZyJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/UrZ5fqd2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D75Xzzb6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BDwsY6I3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DphZCBUH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DAUfiX2E.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Cm2VvG2T.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.BqgUwS1x.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dw5q4ayE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C0XXYJb4.js">
   </head>
   <body data-sveltekit-preload-data="hover">
-    <!--[--><!--[--><!----><div class="docs-wrapper svelte-1sz14ci"><nav class="main-nav svelte-1lsp5fj "><button class="open-nav svelte-1lsp5fj"><span class="svelte-1lsp5fj"></span> <span class="svelte-1lsp5fj"></span> <span class="svelte-1lsp5fj"></span></button> <div class="main-nav__wrapper svelte-1lsp5fj"><header class="svelte-1lsp5fj"><h1>Point it out docs</h1> <div class="version">v.0.1.4</div></header> <!--[--><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/point-it-out-docs/#getting-started">General</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/#getting-started">Getting started</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/point-it-out-docs/create#creating-pointers">create(...)</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/create#creating-pointers">Creating pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/create#rect">Rect</a><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/create#pointer-references">Pointer references</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/point-it-out-docs/update#update-all">update()</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/update#update-all">Update all pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/update#update-specific-pointer">Update a pointer</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/point-it-out-docs/clear#clear-all-pointers">clear()</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/clear#clear-all-pointers">Clear all pointers</a><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/clear#destroy-specific-pointer">Destroy a pointer</a><!--]--></nav><nav class="main-nav__section svelte-1lsp5fj"><h2 class="svelte-1lsp5fj"><a href="/point-it-out-docs/config">config(options)</a></h2> <!--[--><a class="main-nav__link svelte-1lsp5fj " href="/point-it-out-docs/config">Configuring global options</a><!--]--></nav><!--]--></div></nav><!----> <main class="svelte-1sz14ci"><!----><!----><h1 id="getting-started">Getting started</h1> <p>Point it out is a tiny library to mark/point out DOM elements using another absolutely positioned
-  elements or procedurally generated SVGs.</p> <p>The most common use case is to easily create tutorial pointers to point out interface elements
-  that you want to describe or that the user should interact with.</p> <section class="doc-section"><h2>Installation</h2> <p>Install pointitout from npm:</p> <div class="code-wrapper svelte-1b5vxof " style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-1b5vxof"><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><button class="code-wrapper__button svelte-1b5vxof">Select all</button><!--]--></div> <pre class="svelte-1b5vxof"><code class="language-bash svelte-1b5vxof"><!----><!---->npm install pointitout<!----></code></pre></div><!----> <p><small>or inject the single minified .js file as a &lt;script> from: <a href="https://unpkg.com/pointitout@latest/pointitout.js">https://unpkg.com/pointitout@latest/pointitout.js</a></small></p></section> <section class="doc-section"><h2>Basic usage</h2> <div class="code-wrapper svelte-1b5vxof " style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-1b5vxof"><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><button class="code-wrapper__button svelte-1b5vxof">Select all</button><!--]--></div> <pre class="svelte-1b5vxof"><code class="language-typescript svelte-1b5vxof"><!----><!---->import { create } from 'pointitout' 
-
-create('rect', { target: '#target-element-id' })<!----></code></pre></div><!----> <p>See more options for the <a href="/point-it-out-docs/create">create function</a>.</p></section><!----><!----></main></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+    <div style="display: contents"><!--[--><!--[--><!----><div class="docs-wrapper svelte-12qhfyh"><nav class="main-nav svelte-tbtjzw"><button class="open-nav svelte-tbtjzw" aria-label="Toggle navigation menu"><span class="svelte-tbtjzw"></span> <span class="svelte-tbtjzw"></span> <span class="svelte-tbtjzw"></span></button> <div class="main-nav__wrapper svelte-tbtjzw"><header class="svelte-tbtjzw"><h1><a href="./" data-sveltekit-reload="">Point it out docs</a></h1> <div class="version">v0.2.5</div></header> <!--[--><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./#getting-started">General</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./#getting-started">Getting started</a><!--]--><!--]--></nav><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./create#creating-pointers">Creation</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./create#creating-pointers">Creating pointers</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./create#rect">Rect</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./create#free">Free</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./create#arrow">Arrow</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./create#pointer-references">Pointer references</a><!--]--><!--]--></nav><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./animations#animate">Animations</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./animations#animate">Animate</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./animations#custom-animations">Custom animations</a><!--]--><!--]--></nav><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./management#update-all">Pointers management</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./management#update-all">Update all pointers</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./management#update-specific-pointer">Update a pointer</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./management#clear-all-pointers">Clear all pointers</a><!--]--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./management#destroy-specific-pointer">Destroy a pointer</a><!--]--><!--]--></nav><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./responsiveness#responsive-pointers">Responsiveness</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./responsiveness#responsive-pointers">Responsive pointers</a><!--]--><!--]--></nav><nav class="main-nav__section svelte-tbtjzw"><h2 class="svelte-tbtjzw"><a href="./config#configuring-global-options">config(options)</a></h2> <!--[--><!--[!--><a class="main-nav__link svelte-tbtjzw" href="./config#configuring-global-options">Configuring global options</a><!--]--><!--]--></nav><!--]--></div></nav><!----> <main class="svelte-12qhfyh"><div class="loader svelte-bb97q4"><div class="loader__spinner svelte-bb97q4"></div></div><!----> <!--[--><!----><header data-nav-heading="" id="getting-started" class="svelte-1uha8ag"><img class="point-it-out-logo svelte-1uha8ag" src="./pointitout-logo.svg" alt="Point it out logo"/> <h1 class="point-it-out-title svelte-1uha8ag">Point it out</h1> <p class="subtitle svelte-1uha8ag">A tiny, 🌲tree-shakeable and zero-dependencies JavaScript library to point out DOM elements using absolutely positioned
+  elements or procedurally generated SVGs.</p> <p class="copy svelte-1uha8ag"><a href="https://alexvega.net/">Alexander Vega</a> © 2024 | MIT license | <a href="https://github.com/alexvgjm/point-it-out">GitHub</a></p></header> <section class="doc-section"><h1>Getting started</h1> <section class="doc-section"><h2>Installation</h2> <p>Install pointitout from npm:</p> <div class="code-wrapper svelte-168wuw6" style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-168wuw6"><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><button class="code-wrapper__button svelte-168wuw6">Select all</button><!--]--></div> <pre class="svelte-168wuw6"><code class="language-bash svelte-168wuw6"><!--[--><!---->npm install pointitout<!--]--></code></pre></div><!----></section> <section class="doc-section"><h2>Basic usage</h2> <p>Rect</p> <div class="columns-container svelte-dqkged" style="--gap: 0px; margin-top: 1rem"><div class="columns-container__left svelte-dqkged"><!--[--><div class="code-wrapper svelte-168wuw6 code-wrapper--no-top" style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-168wuw6"><!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <pre class="svelte-168wuw6"><code class="language-typescript svelte-168wuw6"><!--[--><!---->create('rect', {
+    target: '#example',
+    strokeColor: "#5896d5",
+    strokeWidth: 8,
+    round: '20%',
+})<!--]--></code></pre></div><!--]--></div> <div class="columns-container__right svelte-dqkged"><!--[--><div slot="right" class="result-panel"><button class="example-btn svelte-1uha8ag">▶ Run code</button> <div class="test-box" id="example">#example</div></div><!--]--></div></div><!----> <p>Arrow</p> <div class="columns-container svelte-dqkged" style="--gap: 0px; margin-top: 1rem"><div class="columns-container__left svelte-dqkged"><!--[--><div class="code-wrapper svelte-168wuw6 code-wrapper--no-top" style="--lang-color: transparent"><!--[!--><!--]--> <div class="code-wrapper__buttons svelte-168wuw6"><!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <pre class="svelte-168wuw6"><code class="language-typescript svelte-168wuw6"><!--[--><!---->create('arrow', {
+  target: '#example2', 
+  container: 'main',
+  strokeColor: "palevioletred",
+  fillColor: "lightpink",
+  strokeWidth: 8,
+  distance: 20
+})<!--]--></code></pre></div><!--]--></div> <div class="columns-container__right svelte-dqkged"><!--[--><div slot="right" class="result-panel"><button class="example-btn svelte-1uha8ag">▶ Run code</button> <div class="test-box" id="example2">#example2</div></div><!--]--></div></div><!----> <p>See more options for the <a href="./create">create function</a>.</p></section></section><!----><!--]--></main></div><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1fmoye5 = {
+					__sveltekit_1k7t1zv = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/point-it-out-docs"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [{"type":"data","data":{},"uses":{}},null];
-
 					Promise.all([
-						import("./_app/immutable/entry/start.CqlbQ0zm.js"),
-						import("./_app/immutable/entry/app.E6FX8gWJ.js")
+						import("./_app/immutable/entry/start.BClsvno7.js"),
+						import("./_app/immutable/entry/app.ULhS0SmU.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
-							data,
+							data: [{type:"data",data:{},uses:{}},null],
 							form: null,
 							error: null
 						});
 					});
 				}
 			</script>
-		
+		</div>
   </body>
 </html>
